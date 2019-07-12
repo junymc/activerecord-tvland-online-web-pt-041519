@@ -4,7 +4,7 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
 
   def full_name
-    puts "#{first_name} #{last_name}"
+    "#{first_name} #{last_name}"
   end
 
   def list_roles

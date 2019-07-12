@@ -1,4 +1,4 @@
-class CreateActors < ActiveRecord::migrations
+class CreateActors < ActiveRecord::Migrations
 
    def change
      create_table :actors do |t|

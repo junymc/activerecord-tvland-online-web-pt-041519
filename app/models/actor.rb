@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    Actor.characters.collect do |character|
+    self.characters.collect do |character|
       binding.pry
       "#{character.name}"
     end
